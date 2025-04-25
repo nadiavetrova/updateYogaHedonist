@@ -88,7 +88,6 @@ button {
 }
 
 .logoBox {
-  text-align: end;
   margin-top: 10px;
 }
 
@@ -106,7 +105,7 @@ button {
 }
 
 .btnBox {
-  text-align: center;
+  text-align: end;
 }
 
 .telegramConnection {
@@ -201,4 +200,77 @@ button {
 .bonusTitle,
 .bonuses {
   width: 70%;
+}
+
+/* ______________aboutMeSection______________ */
+
+.aboutMeSection {
+  padding: 127px 0;
+}
+
+.aboutMeImg {
+  border-radius: 10px;
+}
+
+.abouMeInfoBox {
+  width: 80%;
+}
+
+.aboutMeTitle {
+  font-size: 40px;
+}
+
+.myGoalTetx {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.aboutMeText,
+.aboutMeList {
+  font-size: 16px;
+}
+
+.aboutMeList {
+  margin-bottom: 37px;
+}
+
+.aboutMeItem {
+  margin-bottom: 10px;
+}
+
+.aboutMeItem::before {
+  content: '• ';
+  color: #F7F5E4;
+  font-size: 16px;
+}
+
+.aboutMeContacts>div:not(:last-child)::after {
+  content: '|';
+  margin-left: 1px;
+  color: inherit;
+}
+
+.aboutMeContacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  font-size: 16px;
+}
+
+.instaLink,
+.telegLink,
+.youTubeLink {
+  padding: 10px 5px;
+}
+
+.instagram {
+  position: relative;
+}
+
+.star {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  transform: translate(-80%, -20%);
 }
