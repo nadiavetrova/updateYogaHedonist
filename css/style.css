@@ -1,0 +1,104 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+  color: black;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++ */
+
+.accent {
+  color: #3C5A4B;
+}
+
+.accentBg {
+  background: linear-gradient(to right, #3C5A4B, #5E8D76, #3C5A4B);
+}
+
+.beige {
+  color: #F7F5E4;
+}
+
+.beigeBg {
+  background-color: #F7F5E4;
+}
+
+.greenBg {
+  background-color: #3C5A4B;
+}
+
+/* +++++++++++++++fonts++++++++++++++++ */
+
+.manrope-regular {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* _____________________________________ */
+
+
+.bg {
+  background: url('../img/mainScreenBG.jpg') no-repeat center center;
+  background-size: cover;
+  height: 1000px;
+}
+
+.logoBox {
+  text-align: end;
+  margin-top: 10px;
+}
+
+.headerMenu,
+.btnBox {
+  margin-top: 50px;
+}
+
+.headerList {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  gap: 37px;
+  font-size: 16px;
+}
+
+.btnBox {
+  text-align: center;
+}
+
+.telegramConnection {
+  padding: 7px 20px;
+  border-radius: 20px;
+}
