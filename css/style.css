@@ -71,10 +71,17 @@ button {
   font-style: normal;
 }
 
+.caveat {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* _____________________________________ */
 
 
-.bg {
+.bgHeaderMainScreen {
   background: url('../img/mainScreenBG.jpg') no-repeat center center;
   background-size: cover;
   height: 1000px;
@@ -146,4 +153,52 @@ button {
 
 .mainBox>*:not(:last-child) {
   margin-bottom: 20px;
+}
+
+/* ____________philosophySection_____________ */
+.philosophyTitle {
+  margin: 38px 0 17px 0;
+  font-size: 26px;
+}
+
+.youGetImg {
+  border-radius: 10px;
+  margin-bottom: 26px;
+}
+
+.youGetTitle {
+  font-size: 32px;
+}
+
+.youGetList {
+  font-size: 16px;
+}
+
+.youGetItem::before {
+  content: '• ';
+  color: #000;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.bonusTitle {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.bonuses {
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 35px 0;
+}
+
+.bonus {
+  padding: 3px 20px;
+}
+
+.bonusTitle,
+.bonuses {
+  width: 70%;
 }
