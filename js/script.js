@@ -85,3 +85,47 @@ function closeSlider() {
   documentsSlider.classList.remove('activeSlider');
   documentsSlider.classList.add('hide');
 }
+
+
+function initClasses() {
+  const groupClassBtn = document.querySelector('.groupClassBtn')
+  const individClassBtn = document.querySelector('.individClassBtn')
+
+  const groupClassBox = document.querySelector('.groupClassBox')
+  const individClassBox = document.querySelector('.individClassBox')
+
+  groupClassBtn.addEventListener('click', showGroupClass);
+  individClassBtn.addEventListener('click', showIndivClass);
+
+
+
+
+  function showGroupClass() {
+    groupClassBtn.classList.add('activeBtn');
+    individClassBtn.classList.remove('activeBtn');
+    individClassBtn.classList.add('hideBtn');
+    groupClassBtn.classList.remove('hideBtn');
+
+    groupClassBox.classList.add('activeClass');
+    groupClassBox.classList.remove('hideClass');
+
+    individClassBox.classList.add('hideClass');
+    individClassBox.classList.remove('activeClass');
+  }
+
+  function showIndivClass() {
+    groupClassBtn.classList.remove('activeBtn');
+    individClassBtn.classList.add('activeBtn');
+    individClassBtn.classList.remove('hideBtn');
+    groupClassBtn.classList.add('hideBtn');
+
+    groupClassBox.classList.remove('activeClass');
+    groupClassBox.classList.add('hideClass');
+
+    individClassBox.classList.remove('hideClass');
+    individClassBox.classList.add('activeClass');
+  }
+}
+
+
+initClasses()
