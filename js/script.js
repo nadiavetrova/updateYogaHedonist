@@ -129,3 +129,9 @@ function initClasses() {
 
 
 initClasses()
+
+
+function toggleMenu() {
+  var menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('show'); // Добавляем/удаляем класс для показа/скрытия меню
+}

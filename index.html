@@ -30,19 +30,13 @@
             <div class="headerMenu">
               <ul class="headerList ">
                 <li class="headerItem">
-                  <a class="headerLink" href="">
-                    Философия
-                  </a>
+                  <a class="headerLink" href="">Философия</a>
                 </li>
                 <li class="headerItem">
-                  <a class="headerLink" href="">
-                    Обо мне
-                  </a>
+                  <a class="headerLink" href="">Обо мне</a>
                 </li>
                 <li class="headerItem">
-                  <a class="headerLink" href="">
-                    Занятия
-                  </a>
+                  <a class="headerLink" href="">Занятия</a>
                 </li>
               </ul>
             </div>
@@ -54,7 +48,32 @@
           </div>
         </div>
       </div>
+
+      <!-- Иконка бургера для мобильных -->
+      <div class="burgerMenuIcon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <!-- Скрытое меню для мобильных -->
+      <div class="mobileMenu" id="mobileMenu">
+        <ul class="headerList">
+          <li class="headerItem">
+            <a class="headerLink" href="">Философия</a>
+          </li>
+          <li class="headerItem">
+            <a class="headerLink" href="">Обо мне</a>
+          </li>
+          <li class="headerItem">
+            <a class="headerLink" href="">Занятия</a>
+          </li>
+        </ul>
+      </div>
     </section>
+
+
+
 
     <section class="mainScreen">
       <div class="container">
@@ -69,7 +88,8 @@
                 себя.
               </p>
               <div class="mainBtnBox">
-                <a class="telegramConnection accentBg beige" href="https://t.me/yogahedonist">Записаться на занятие</a>
+                <a class="mainBtn telegramConnection accentBg beige" href="https://t.me/yogahedonist">Записаться на
+                  занятие</a>
               </div>
             </div>
           </div>
