@@ -673,9 +673,27 @@ button {
     width: 55%;
   }
 
+  .bonus {
+    padding: 3px 10px;
+  }
 
+  .bonusTitle,
+  .bonuses {
+    text-align: center;
+    width: 100%;
+  }
 
+  .philosophySection {
+    padding-bottom: 50px;
+  }
 
+  .bonuses {
+    margin: 15px 0;
+  }
+
+  .aboutMeSection {
+    padding: 70px 0;
+  }
 }
 
 
