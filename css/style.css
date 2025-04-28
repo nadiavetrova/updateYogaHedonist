@@ -12,6 +12,10 @@ body {
   color: black;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul,
 ol {
   list-style: none;
@@ -647,6 +651,16 @@ button {
   display: none;
 }
 
+@media (max-width: 1200px) {
+  .bonuses {
+    margin: 15px 0;
+  }
+
+  .bonus {
+    padding: 3px 10px;
+  }
+}
+
 /* Стили для мобильной версии */
 @media (max-width: 900px) {
   .headerMenu {
@@ -707,10 +721,6 @@ button {
     padding-bottom: 50px;
   }
 
-  .bonuses {
-    margin: 15px 0;
-  }
-
   .aboutMeSection {
     padding: 50px 0;
   }
@@ -756,9 +766,9 @@ button {
 
   .adaptAboutMeImgBox {
     display: flex;
-    justify-content: start;
-    margin-bottom: 10px;
-    margin-left: -15px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    width: 94%;
   }
 
   .aboutMeList {
@@ -820,6 +830,14 @@ button {
   .js-arrow {
     width: 30px;
     height: 30px;
+  }
+
+  .aboutMeText {
+    text-align: center;
+  }
+
+  .abouMeInfoBox {
+    width: 100%;
   }
 }
 

@@ -167,7 +167,62 @@ function initClasses() {
 initClasses()
 
 
+// Функция для открытия/закрытия меню
 function toggleMenu() {
   var menu = document.getElementById('mobileMenu');
-  menu.classList.toggle('show'); // Добавляем/удаляем класс для показа/скрытия меню
+  var burgerIcon = document.querySelector('.burgerMenuIcon');
+
+  // Переключение видимости меню
+  menu.classList.toggle('show');
+  burgerIcon.classList.toggle('active');
+
+  // Если меню открыто, добавляем обработчик закрытия при клике вне меню и на ссылки
+  if (menu.classList.contains('show')) {
+    document.addEventListener('click', closeMenuOnClickOutside);
+
+    // Добавляем обработчики для ссылок
+    var links = menu.querySelectorAll('.headerLink');
+    links.forEach(function (link) {
+      link.addEventListener('click', closeOnLinkClick);
+    });
+  } else {
+    document.removeEventListener('click', closeMenuOnClickOutside);
+
+    // Убираем обработчики для ссылок
+    var links = menu.querySelectorAll('.headerLink');
+    links.forEach(function (link) {
+      link.removeEventListener('click', closeOnLinkClick);
+    });
+  }
+}
+
+// Функция для закрытия меню при клике вне его
+function closeMenuOnClickOutside(event) {
+  var menu = document.getElementById('mobileMenu');
+  var burgerIcon = document.querySelector('.burgerMenuIcon');
+
+  // Проверяем, был ли клик вне меню и вне кнопки
+  if (!menu.contains(event.target) && !burgerIcon.contains(event.target)) {
+    closeMenu();
+  }
+}
+
+// Функция для закрытия меню при клике на ссылку
+function closeOnLinkClick() {
+  closeMenu();
+}
+
+// Вспомогательная функция для закрытия меню
+function closeMenu() {
+  var menu = document.getElementById('mobileMenu');
+  var burgerIcon = document.querySelector('.burgerMenuIcon');
+  menu.classList.remove('show');
+  burgerIcon.classList.remove('active');
+  document.removeEventListener('click', closeMenuOnClickOutside);
+
+  // Убираем обработчики для ссылок
+  var links = menu.querySelectorAll('.headerLink');
+  links.forEach(function (link) {
+    link.removeEventListener('click', closeOnLinkClick);
+  });
 }
