@@ -639,7 +639,13 @@ button {
   display: none;
 }
 
+.documentBoxAdapt {
+  display: none;
+}
 
+.documentBoxAdapt {
+  display: none;
+}
 
 /* Стили для мобильной версии */
 @media (max-width: 900px) {
@@ -774,6 +780,46 @@ button {
 
   .youGetImgBoxAdapt {
     display: flex;
+  }
+
+  .senioritySection {
+    background: #f7ece6 !important;
+  }
+
+  .senioritySection::before {
+    background: none;
+  }
+
+  .openDocumentSlider {
+    right: 0%;
+    transform: translate(0%, 82%);
+  }
+
+  .documentBoxAdapt {
+    display: flex;
+    position: relative;
+    background: url('../img/backAdapt.jpg') no-repeat right center;
+    background-size: cover;
+    height: 68%;
+    border-radius: 0;
+  }
+
+  .documentAdapt {
+    position: relative;
+  }
+
+  .documentBox {
+    display: none;
+  }
+
+  .seniorityBox {
+    margin: 50px 0;
+  }
+
+  .btnClose,
+  .js-arrow {
+    width: 30px;
+    height: 30px;
   }
 }
 

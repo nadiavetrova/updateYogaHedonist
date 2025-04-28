@@ -65,13 +65,16 @@ function startSlider(initSlideNumber) {
 const openSlider = document.querySelector('.openDocumentSlider');
 const documentsSlider = document.querySelector('.documentsSlider');
 const btnClose = document.querySelector('.btnClose');
-console.log(btnClose);
+console.log(openSlider);
+
 let isSliderStarted = false;
 
 openSlider.addEventListener('click', showSlider);
 btnClose.addEventListener('click', closeSlider);
 
 function showSlider() {
+  console.log(111);
+
   documentsSlider.classList.remove('hide');
   documentsSlider.classList.add('activeSlider');
 
@@ -85,6 +88,39 @@ function closeSlider() {
   documentsSlider.classList.remove('activeSlider');
   documentsSlider.classList.add('hide');
 }
+
+
+
+const openSliderAdapt = document.querySelector('.openDocumentSliderAdapt');
+const documentsSliderAdapt = document.querySelector('.documentsSlider');
+const btnCloseAdapt = document.querySelector('.btnClose');
+console.log(openSlider);
+
+let isSliderStartedAdapt = false;
+
+openSliderAdapt.addEventListener('click', showSlider);
+btnCloseAdapt.addEventListener('click', closeSlider);
+
+function showSlider() {
+  console.log(111);
+
+  documentsSliderAdapt.classList.remove('hide');
+  documentsSliderAdapt.classList.add('activeSlider');
+
+  if (!isSliderStartedAdapt) {
+    startSlider(1);
+    isSliderStartedAdapt = true;
+  }
+}
+
+function closeSlider() {
+  documentsSliderAdapt.classList.remove('activeSlider');
+  documentsSliderAdapt.classList.add('hide');
+}
+
+
+
+
 
 
 function initClasses() {
