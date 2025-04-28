@@ -452,8 +452,15 @@ button {
 }
 
 /* ____________priceSection_________ */
+
+.consultation {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
 .priceSection {
-  padding: 75px 0 0 0;
+  padding: 75px 0 119px 0;
   text-align: center;
 }
 
@@ -578,7 +585,13 @@ button {
   justify-content: space-around;
 }
 
+/* _____________extraInfoSection__________ */
 
+.extraInfoSection {
+  background: url('../img/extraInfo.jpg') no-repeat center center;
+  background-size: cover;
+  height: 1000px;
+}
 
 
 
@@ -723,6 +736,11 @@ button {
 
   .aboutMeSection {
     padding: 50px 0;
+  }
+
+  .individClassBtn {
+    margin-left: 0px;
+    margin-top: 10px;
   }
 }
 
