@@ -641,9 +641,48 @@ button {
   font-weight: 700;
 }
 
+
+
+
+/* _________footerSection_________ */
+.footerSection {
+  padding: 50px 0 250px 0;
+  text-align: center;
+}
+
+.footerContacts {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  justify-content: center;
+  gap: 10px;
+  margin: 33px 0 16px 0;
+}
+
+.footerContacts>div:not(:last-child)::after {
+  content: '|';
+  margin-left: 1px;
+  color: inherit;
+}
+
+.footerText {
+  font-size: 26px;
+  margin-bottom: 22px;
+}
+
+.footerWarning {
+  font-size: 7px;
+}
+
+.footerText {
+  position: relative;
+}
+
 /* ___________adapt___________ */
 
-
+.adaptAboutMeImgBox {
+  display: none;
+}
 
 /* Стили для иконки бургера, расположенной справа */
 .burgerMenuIcon {
@@ -820,6 +859,7 @@ button {
 
   .aboutMeTitle {
     font-size: 24px;
+    margin-left: 72px;
   }
 
   .myGoalTetx {
@@ -841,8 +881,6 @@ button {
   .adaptAboutMeImgBox {
     display: flex;
     margin-bottom: 20px;
-    margin-left: -20px;
-    width: 94%;
   }
 
   .aboutMeList {
@@ -889,10 +927,6 @@ button {
     height: 30px;
   }
 
-  .aboutMeText {
-    text-align: center;
-  }
-
   .abouMeInfoBox {
     width: 100%;
   }
@@ -907,5 +941,15 @@ button {
 
   .mainBtn {
     transform: translate(38%, 350%);
+  }
+
+  .openDocumentSlider {
+    padding: 5px 15px;
+    transform: translate(0%, 116%);
+  }
+
+  .aboutMeTitle {
+    font-size: 24px;
+    margin-left: 49px;
   }
 }
