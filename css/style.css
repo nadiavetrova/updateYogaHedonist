@@ -232,29 +232,6 @@ button {
   order: 2;
 }
 
-/* На мобилке меняем порядок */
-@media (max-width: 768px) {
-  .leftColumn {
-    order: 2;
-  }
-
-  .rightColumn {
-    order: 1;
-  }
-
-  .philosophyGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .bonusBox {
-    margin-bottom: 30px;
-  }
-
-  .bonuses {
-    width: 100%;
-  }
-}
-
 
 /* ______________aboutMeSection______________ */
 
@@ -630,15 +607,39 @@ button {
   justify-content: space-around;
 }
 
-/* _____________extraInfoSection__________ */
+/* _____________reasonsSection__________ */
 
-.extraInfoSection {
+.reasonsSection {
   background: url('../img/extraInfo.jpg') no-repeat center center;
   background-size: cover;
   height: 1000px;
 }
 
+.reasonsBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 50px;
+}
 
+.reasonsList {
+  font-size: 16px;
+}
+
+.reasonsTitle {
+  font-size: 32px;
+}
+
+.reasonsItem::before {
+  content: '• ';
+  color: #000;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.reasonsItem>span {
+  font-weight: 700;
+}
 
 /* ___________adapt___________ */
 
@@ -688,18 +689,6 @@ button {
   color: #F7F5E4;
   font-size: 20px;
 }
-
-/* .adaptAboutMeImgBox {
-  display: none;
-} */
-
-/* .bonusBoxAdapt {
-  display: none;
-}
-
-.youGetImgBoxAdapt {
-  display: none;
-} */
 
 .documentBoxAdapt {
   display: none;
@@ -789,6 +778,28 @@ button {
   }
 }
 
+
+@media (max-width: 768px) {
+  .leftColumn {
+    order: 2;
+  }
+
+  .rightColumn {
+    order: 1;
+  }
+
+  .philosophyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .bonusBox {
+    margin-bottom: 30px;
+  }
+
+  .bonuses {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 430px) {
   .bgHeaderMainScreen {
