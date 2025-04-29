@@ -162,25 +162,16 @@ button {
 
 /* ____________philosophySection_____________ */
 .philosophySection {
-  padding-bottom: 96px;
+  padding-bottom: 79px;
 }
 
 .philosophyTitle {
-  margin: 38px 0 17px 0;
   font-size: 26px;
+  padding: 20px 0;
 }
 
 .youGetImg {
   border-radius: 10px;
-  margin-bottom: 26px;
-}
-
-.youGetTitle {
-  font-size: 32px;
-}
-
-.youGetList {
-  font-size: 16px;
 }
 
 .youGetItem::before {
@@ -194,22 +185,76 @@ button {
   font-size: 40px;
 }
 
+.youGetTitle {
+  font-size: 32px;
+}
+
+.youGetList,
 .bonuses {
   font-size: 16px;
+}
+
+.philosophyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.leftColumn,
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.bonuses {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 35px 0;
+  width: 82%;
 }
 
 .bonus {
-  padding: 3px 20px;
+  padding: 4px 20px;
+  margin: 20px 0;
 }
 
-.bonusTitle,
-.bonuses {
-  width: 70%;
+/* По умолчанию — десктоп */
+.leftColumn {
+  order: 1;
 }
+
+.rightColumn {
+  order: 2;
+}
+
+/* На мобилке меняем порядок */
+@media (max-width: 768px) {
+  .leftColumn {
+    order: 2;
+  }
+
+  .rightColumn {
+    order: 1;
+  }
+
+  .philosophyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .bonusBox {
+    margin-bottom: 30px;
+  }
+
+  .bonuses {
+    width: 100%;
+  }
+}
+
 
 /* ______________aboutMeSection______________ */
 
@@ -644,17 +689,17 @@ button {
   font-size: 20px;
 }
 
-.adaptAboutMeImgBox {
+/* .adaptAboutMeImgBox {
   display: none;
-}
+} */
 
-.bonusBoxAdapt {
+/* .bonusBoxAdapt {
   display: none;
 }
 
 .youGetImgBoxAdapt {
   display: none;
-}
+} */
 
 .documentBoxAdapt {
   display: none;
@@ -791,23 +836,6 @@ button {
 
   .aboutMeList {
     margin-bottom: 5px;
-  }
-
-  .youGetImgBox {
-    display: none;
-  }
-
-  .bonusBoxAdapt {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bonusBox {
-    display: none;
-  }
-
-  .youGetImgBoxAdapt {
-    display: flex;
   }
 
   .senioritySection {
