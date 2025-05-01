@@ -645,7 +645,7 @@ button {
 
 /* _________footerSection_________ */
 .footerSection {
-  padding: 50px 0 250px 0;
+  padding: 50px 0 50px 0;
   text-align: center;
 }
 
@@ -675,6 +675,75 @@ button {
 
 .footerText {
   position: relative;
+}
+
+
+/* _____________reviews________ */
+
+.reviewsSection {
+  background-color: #F7F5E4;
+  padding: 85px 0 87px 0;
+}
+
+.reviewBow1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 47px;
+}
+
+.reviewsText {
+  margin-top: 47px;
+  font-size: 26px;
+  padding-left: 50px;
+}
+
+.reviewTextBox {
+  position: relative;
+}
+
+.heardImg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(37%, 90%);
+}
+
+.review5 {
+  margin-top: 50px;
+}
+
+.review3 {
+  margin-top: 20px;
+}
+
+.reviewBow2 {
+  margin-bottom: 47px;
+  text-align: center;
+}
+
+.reviewBow3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.review6 {
+  max-width: 400px;
+}
+
+.reviewsList {
+  font-size: 16px;
+  margin-bottom: 47px;
+}
+
+.reviewsItem::before {
+  content: '• ';
+  color: #000;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.reviewBowAdapt {
+  display: none;
 }
 
 /* ___________adapt___________ */
@@ -745,7 +814,13 @@ button {
     padding: 3px 10px;
   }
 
-
+  .heardImg {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, 22%);
+  }
 }
 
 @media (max-width: 1000px) {
@@ -828,7 +903,48 @@ button {
 
 
 @media (max-width: 768px) {
-  .leftColumn {
+
+  .reviewsText {
+    margin-top: 33px;
+    font-size: 24px;
+    padding-left: 50px;
+  }
+
+  .heardImg {
+    width: 50px;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    transform: translate(-25%, 4%);
+  }
+
+  .reviewsList {
+    font-size: 14px;
+    margin-bottom: 11px;
+  }
+
+  .reviewBowAdapt {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .review5,
+  .review4 {
+    display: none;
+  }
+
+  .reviewBow2,
+  .reviewBow1 {
+    margin-bottom: 0px;
+  }
+
+  .reviewsSection {
+    padding: 5px 0 7px 0;
+  }
+
+
+
+  img .leftColumn {
     order: 2;
   }
 
