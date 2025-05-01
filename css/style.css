@@ -367,7 +367,7 @@ button {
   position: absolute;
   top: 0;
   right: 50%;
-  transform: translate(6%, 96%);
+  transform: translate(60%, 86%);
 }
 
 /* ____________documentsSlider_________________ */
@@ -467,7 +467,6 @@ button {
   height: 50px;
   border-radius: 50px;
   background-color: #F7F5E4;
-  padding-left: 5px;
   cursor: pointer;
 }
 
@@ -640,7 +639,9 @@ button {
   font-weight: 700;
 }
 
-
+.reviewsItem>span {
+  font-weight: 700;
+}
 
 
 /* _________footerSection_________ */
@@ -828,6 +829,10 @@ button {
     font-size: 24px;
     letter-spacing: 0px;
   }
+
+  .openDocumentSlider {
+    transform: translate(150%, 86%);
+  }
 }
 
 
@@ -904,6 +909,10 @@ button {
 
 @media (max-width: 768px) {
 
+  .openDocumentSlider {
+    transform: translate(133%, 86%);
+  }
+
   .reviewsText {
     margin-top: 33px;
     font-size: 24px;
@@ -915,7 +924,7 @@ button {
     position: absolute;
     top: 0%;
     left: 0;
-    transform: translate(-25%, 4%);
+    transform: translate(-15%, 4%);
   }
 
   .reviewsList {
@@ -967,9 +976,18 @@ button {
   .mainBox {
     padding-bottom: 50px;
   }
+
+  .btnClose,
+  .js-arrow {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media screen and (max-width: 430px) {
+  .documentTitle {
+    font-size: 20px;
+  }
 
   .mainBtn {
     padding: 12px 49px;
@@ -1024,7 +1042,7 @@ button {
 
   .openDocumentSlider {
     right: 0%;
-    transform: translate(0%, 82%);
+    transform: translate(0%, 33%);
   }
 
   .documentBoxAdapt {
@@ -1116,60 +1134,71 @@ button {
     gap: 40px;
   }
 
+  .seniorityList {
+    font-size: 12px;
+  }
+}
 
 
-  @media screen and (max-width: 390px) {
+@media screen and (max-width: 390px) {
 
 
-    .youGetList,
-    .bonuses {
-      font-size: 14px;
-    }
-
-    .bonusTitle {
-      font-size: 24px;
-      text-align: start;
-    }
-
-    .philosophyTitle {
-      font-size: 20px;
-      padding: 5px 0;
-    }
-
-    .youGetTitle {
-      font-size: 24px;
-      text-align: center;
-    }
-
-    .philosophySection {
-      padding-bottom: 28px;
-    }
-
-    .bgHeaderMainScreen {
-      background-position: -394px center;
-    }
-
-    .openDocumentSlider {
-      padding: 5px 15px;
-      transform: translate(0%, 116%);
-    }
-
-    .aboutMeTitle {
-      font-size: 24px;
-    }
-
-    .aboutMeText,
-    .aboutMeList {
-      font-size: 14px;
-    }
+  .youGetList,
+  .bonuses {
+    font-size: 14px;
   }
 
-  @media screen and (max-width: 355px) {
-    .bgHeaderMainScreen {
-      background-position: -424px center;
-    }
-
-    .mainBtn {
-      padding: 6px 29px;
-    }
+  .bonusTitle {
+    font-size: 24px;
+    text-align: start;
   }
+
+  .philosophyTitle {
+    font-size: 20px;
+    padding: 5px 0;
+  }
+
+  .youGetTitle {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .philosophySection {
+    padding-bottom: 28px;
+  }
+
+  .bgHeaderMainScreen {
+    background-position: -394px center;
+  }
+
+  .openDocumentSlider {
+    padding: 9px 20px;
+    transform: translate(2%, 59%);
+  }
+
+  .aboutMeTitle {
+    font-size: 24px;
+  }
+
+  .aboutMeText,
+  .aboutMeList {
+    font-size: 14px;
+  }
+}
+
+
+
+@media screen and (max-width: 355px) {
+  .bgHeaderMainScreen {
+    background-position: -424px center;
+  }
+
+  .mainBtn {
+    padding: 6px 29px;
+  }
+
+  .openDocumentSlider {
+    padding: 5px 10px;
+    transform: translate(2%, 80%);
+  }
+}
