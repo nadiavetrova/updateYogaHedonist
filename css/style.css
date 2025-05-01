@@ -88,7 +88,6 @@ button {
 .bgHeaderMainScreen {
   background: url('../img/mainScreenBG.jpg') no-repeat center center;
   background-size: cover;
-  padding-bottom: 200px;
 }
 
 .logoBox {
@@ -137,6 +136,10 @@ button {
 
 .headerLink:hover::after {
   width: 100%;
+}
+
+.mainBox {
+  padding-bottom: 350px;
 }
 
 /* _________mainScreen___________ */
@@ -350,11 +353,6 @@ button {
   margin-right: 5px;
 }
 
-.telegramConnection {
-  padding: 9px 20px;
-  border-radius: 20px;
-}
-
 .documentTitle {
   font-size: 26px;
 }
@@ -526,11 +524,11 @@ button {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 11px;
   margin-bottom: 90px;
 }
 
 .individClassBtn {
-  margin-left: -20px;
   padding: 10px 42.5px;
 }
 
@@ -591,6 +589,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .individClassBox {
@@ -745,10 +744,25 @@ button {
   .bonus {
     padding: 3px 10px;
   }
+
+
 }
 
-/* Стили для мобильной версии */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+  .mainTitle {
+    font-size: 24px;
+    letter-spacing: 0px;
+  }
+}
+
+
+
+@media (max-width: 930px) {
+  .bonuses {
+    display: block;
+    width: 100%;
+  }
+
   .headerMenu {
     display: none;
     /* Скрываем меню на мобильных */
@@ -775,11 +789,6 @@ button {
 
   .btnBox {
     display: none;
-  }
-
-  .mainTitle {
-    font-size: 24px;
-    letter-spacing: 0px;
   }
 
   .mainScreen {
@@ -838,19 +847,28 @@ button {
   .bonuses {
     width: 100%;
   }
+
+  .mainBox {
+    padding-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 430px) {
-  .bgHeaderMainScreen {
-    background-position: -350px center;
-    margin-bottom: 0;
-  }
 
   .mainBtn {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translate(44%, 350%);
+    padding: 12px 49px;
+  }
+
+  .mainBtnBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    flex-wrap: wrap;
+  }
+
+  .bgHeaderMainScreen {
+    background-position: -370px center;
+    margin-bottom: 0;
   }
 
   .aboutMeImgBox {
@@ -859,18 +877,11 @@ button {
 
   .aboutMeTitle {
     font-size: 24px;
-    margin-left: 72px;
   }
 
   .myGoalTetx {
     font-size: 20px;
     margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .aboutMeText,
-  .aboutMeList {
-    font-size: 12px;
   }
 
   .aboutMeContacts {
@@ -888,7 +899,7 @@ button {
   }
 
   .senioritySection {
-    background: #f7ece6 !important;
+    background: linear-gradient(to bottom, #f0dfd6, #F7ECE6);
   }
 
   .senioritySection::before {
@@ -930,26 +941,119 @@ button {
   .abouMeInfoBox {
     width: 100%;
   }
-}
 
-
-
-@media screen and (max-width: 390px) {
-  .bgHeaderMainScreen {
-    background-position: -374px center;
+  .priceBtn {
+    margin-top: 5px;
   }
 
-  .mainBtn {
-    transform: translate(38%, 350%);
-  }
-
-  .openDocumentSlider {
-    padding: 5px 15px;
-    transform: translate(0%, 116%);
-  }
-
-  .aboutMeTitle {
+  .priceTitle {
     font-size: 24px;
-    margin-left: 49px;
+    margin-bottom: 15px;
   }
-}
+
+  .priceBtns {
+    gap: 2px;
+    margin-bottom: 40px;
+  }
+
+  .groupClassBox {
+    gap: 25px;
+  }
+
+  .priceSection {
+    padding: 47px 0 89px 0;
+  }
+
+  .individClassBox {
+    gap: 42px;
+  }
+
+  .reasonsSection {
+    background:
+      url('../img/extraInfo.jpg') no-repeat center bottom,
+      linear-gradient(to bottom, #EDE2DC 0%, #F7ECE6 100%);
+    background-size:
+      contain,
+      /* картинка */
+      cover;
+    /* градиент */
+    background-repeat: no-repeat;
+    background-position:
+      center bottom,
+      /* картинка */
+      top;
+    /* градиент */
+    min-height: 100vh;
+  }
+
+  .reasonsTitle {
+    font-size: 24px;
+    width: 68%;
+    margin-bottom: 21px;
+  }
+
+  .reasonsList {
+    font-size: 14px;
+  }
+
+  .reasonsBox {
+    gap: 40px;
+  }
+
+
+
+  @media screen and (max-width: 390px) {
+
+
+    .youGetList,
+    .bonuses {
+      font-size: 14px;
+    }
+
+    .bonusTitle {
+      font-size: 24px;
+      text-align: start;
+    }
+
+    .philosophyTitle {
+      font-size: 20px;
+      padding: 5px 0;
+    }
+
+    .youGetTitle {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .philosophySection {
+      padding-bottom: 28px;
+    }
+
+    .bgHeaderMainScreen {
+      background-position: -394px center;
+    }
+
+    .openDocumentSlider {
+      padding: 5px 15px;
+      transform: translate(0%, 116%);
+    }
+
+    .aboutMeTitle {
+      font-size: 24px;
+    }
+
+    .aboutMeText,
+    .aboutMeList {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 355px) {
+    .bgHeaderMainScreen {
+      background-position: -424px center;
+    }
+
+    .mainBtn {
+      padding: 6px 29px;
+    }
+  }
